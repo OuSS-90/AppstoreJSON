@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		CD15F48723F5BD8100063892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15F48623F5BD8100063892 /* AppDelegate.swift */; };
 		CD15F48923F5BD8100063892 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15F48823F5BD8100063892 /* SceneDelegate.swift */; };
-		CD15F48B23F5BD8100063892 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15F48A23F5BD8100063892 /* ViewController.swift */; };
 		CD15F48E23F5BD8100063892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD15F48C23F5BD8100063892 /* Main.storyboard */; };
 		CD15F49023F5BD8200063892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD15F48F23F5BD8200063892 /* Assets.xcassets */; };
 		CD15F49323F5BD8200063892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD15F49123F5BD8200063892 /* LaunchScreen.storyboard */; };
+		CD15F49B23F5BDB200063892 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15F49A23F5BDB200063892 /* BaseTabBarController.swift */; };
+		CD15F49D23F5C03900063892 /* AppsSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15F49C23F5C03900063892 /* AppsSearchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD15F48323F5BD8100063892 /* AppstoreJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppstoreJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD15F48623F5BD8100063892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD15F48823F5BD8100063892 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD15F48A23F5BD8100063892 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD15F48D23F5BD8100063892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD15F48F23F5BD8200063892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD15F49223F5BD8200063892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD15F49423F5BD8200063892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD15F49A23F5BDB200063892 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		CD15F49C23F5C03900063892 /* AppsSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSearchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				CD15F48623F5BD8100063892 /* AppDelegate.swift */,
 				CD15F48823F5BD8100063892 /* SceneDelegate.swift */,
-				CD15F48A23F5BD8100063892 /* ViewController.swift */,
 				CD15F48C23F5BD8100063892 /* Main.storyboard */,
 				CD15F48F23F5BD8200063892 /* Assets.xcassets */,
 				CD15F49123F5BD8200063892 /* LaunchScreen.storyboard */,
 				CD15F49423F5BD8200063892 /* Info.plist */,
+				CD15F49A23F5BDB200063892 /* BaseTabBarController.swift */,
+				CD15F49C23F5C03900063892 /* AppsSearchController.swift */,
 			);
 			path = AppstoreJSON;
 			sourceTree = "<group>";
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD15F48B23F5BD8100063892 /* ViewController.swift in Sources */,
 				CD15F48723F5BD8100063892 /* AppDelegate.swift in Sources */,
 				CD15F48923F5BD8100063892 /* SceneDelegate.swift in Sources */,
+				CD15F49B23F5BDB200063892 /* BaseTabBarController.swift in Sources */,
+				CD15F49D23F5C03900063892 /* AppsSearchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
