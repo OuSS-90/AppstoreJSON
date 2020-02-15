@@ -14,6 +14,9 @@
 		CD15F49323F5BD8200063892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD15F49123F5BD8200063892 /* LaunchScreen.storyboard */; };
 		CD15F49B23F5BDB200063892 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15F49A23F5BDB200063892 /* BaseTabBarController.swift */; };
 		CD15F49D23F5C03900063892 /* AppsSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15F49C23F5C03900063892 /* AppsSearchController.swift */; };
+		CD5334AC23F8410C005C7371 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5334AB23F8410C005C7371 /* UIStackView.swift */; };
+		CD5334AE23F84115005C7371 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5334AD23F84115005C7371 /* UIView+Layout.swift */; };
+		CD5334B023F8414D005C7371 /* AppsSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5334AF23F8414D005C7371 /* AppsSearchCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		CD15F49423F5BD8200063892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD15F49A23F5BDB200063892 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		CD15F49C23F5C03900063892 /* AppsSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSearchController.swift; sourceTree = "<group>"; };
+		CD5334AB23F8410C005C7371 /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		CD5334AD23F84115005C7371 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		CD5334AF23F8414D005C7371 /* AppsSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSearchCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,43 @@
 		CD15F48523F5BD8100063892 /* AppstoreJSON */ = {
 			isa = PBXGroup;
 			children = (
+				CD5334AA23F840BB005C7371 /* Helpers */,
+				CD5334A823F840A7005C7371 /* Views */,
+				CD5334A923F840B3005C7371 /* Controllers */,
 				CD15F48623F5BD8100063892 /* AppDelegate.swift */,
 				CD15F48823F5BD8100063892 /* SceneDelegate.swift */,
 				CD15F48C23F5BD8100063892 /* Main.storyboard */,
 				CD15F48F23F5BD8200063892 /* Assets.xcassets */,
 				CD15F49123F5BD8200063892 /* LaunchScreen.storyboard */,
 				CD15F49423F5BD8200063892 /* Info.plist */,
+			);
+			path = AppstoreJSON;
+			sourceTree = "<group>";
+		};
+		CD5334A823F840A7005C7371 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD5334AF23F8414D005C7371 /* AppsSearchCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD5334A923F840B3005C7371 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				CD15F49A23F5BDB200063892 /* BaseTabBarController.swift */,
 				CD15F49C23F5C03900063892 /* AppsSearchController.swift */,
 			);
-			path = AppstoreJSON;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CD5334AA23F840BB005C7371 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CD5334AB23F8410C005C7371 /* UIStackView.swift */,
+				CD5334AD23F84115005C7371 /* UIView+Layout.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD15F48723F5BD8100063892 /* AppDelegate.swift in Sources */,
+				CD5334B023F8414D005C7371 /* AppsSearchCell.swift in Sources */,
 				CD15F48923F5BD8100063892 /* SceneDelegate.swift in Sources */,
+				CD5334AE23F84115005C7371 /* UIView+Layout.swift in Sources */,
+				CD5334AC23F8410C005C7371 /* UIStackView.swift in Sources */,
 				CD15F49B23F5BDB200063892 /* BaseTabBarController.swift in Sources */,
 				CD15F49D23F5C03900063892 /* AppsSearchController.swift in Sources */,
 			);
