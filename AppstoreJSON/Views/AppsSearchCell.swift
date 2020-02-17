@@ -10,6 +10,14 @@ import UIKit
 
 class AppsSearchCell: UICollectionViewCell {
     
+    var result: ResultData? {
+        didSet {
+            nameLabel.text = result?.trackName
+            categoryLabel.text = result?.primaryGenreName
+            ratingsLabel.text = "\(result?.averageUserRating ?? 0)"
+        }
+    }
+    
     let appIconImageView: UIImageView = {
         let iv = UIImageView()
         iv.backgroundColor = .red

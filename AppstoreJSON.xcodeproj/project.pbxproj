@@ -14,6 +14,8 @@
 		CD15F49323F5BD8200063892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD15F49123F5BD8200063892 /* LaunchScreen.storyboard */; };
 		CD15F49B23F5BDB200063892 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15F49A23F5BDB200063892 /* BaseTabBarController.swift */; };
 		CD15F49D23F5C03900063892 /* AppsSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15F49C23F5C03900063892 /* AppsSearchController.swift */; };
+		CD41AFDE23FB0BD10094F25A /* AppSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41AFDD23FB0BD10094F25A /* AppSearchResult.swift */; };
+		CD41AFE123FB0D860094F25A /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41AFE023FB0D860094F25A /* Service.swift */; };
 		CD5334AC23F8410C005C7371 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5334AB23F8410C005C7371 /* UIStackView.swift */; };
 		CD5334AE23F84115005C7371 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5334AD23F84115005C7371 /* UIView+Layout.swift */; };
 		CD5334B023F8414D005C7371 /* AppsSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5334AF23F8414D005C7371 /* AppsSearchCell.swift */; };
@@ -29,6 +31,8 @@
 		CD15F49423F5BD8200063892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD15F49A23F5BDB200063892 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		CD15F49C23F5C03900063892 /* AppsSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSearchController.swift; sourceTree = "<group>"; };
+		CD41AFDD23FB0BD10094F25A /* AppSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSearchResult.swift; sourceTree = "<group>"; };
+		CD41AFE023FB0D860094F25A /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		CD5334AB23F8410C005C7371 /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		CD5334AD23F84115005C7371 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		CD5334AF23F8414D005C7371 /* AppsSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSearchCell.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 		CD15F48523F5BD8100063892 /* AppstoreJSON */ = {
 			isa = PBXGroup;
 			children = (
+				CD41AFDF23FB0D650094F25A /* Services */,
+				CD41AFDC23FB0BB70094F25A /* Models */,
 				CD5334AA23F840BB005C7371 /* Helpers */,
 				CD5334A823F840A7005C7371 /* Views */,
 				CD5334A923F840B3005C7371 /* Controllers */,
@@ -75,6 +81,22 @@
 				CD15F49423F5BD8200063892 /* Info.plist */,
 			);
 			path = AppstoreJSON;
+			sourceTree = "<group>";
+		};
+		CD41AFDC23FB0BB70094F25A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD41AFDD23FB0BD10094F25A /* AppSearchResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD41AFDF23FB0D650094F25A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CD41AFE023FB0D860094F25A /* Service.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		CD5334A823F840A7005C7371 /* Views */ = {
@@ -179,7 +201,9 @@
 				CD15F48923F5BD8100063892 /* SceneDelegate.swift in Sources */,
 				CD5334AE23F84115005C7371 /* UIView+Layout.swift in Sources */,
 				CD5334AC23F8410C005C7371 /* UIStackView.swift in Sources */,
+				CD41AFE123FB0D860094F25A /* Service.swift in Sources */,
 				CD15F49B23F5BDB200063892 /* BaseTabBarController.swift in Sources */,
+				CD41AFDE23FB0BD10094F25A /* AppSearchResult.swift in Sources */,
 				CD15F49D23F5C03900063892 /* AppsSearchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
