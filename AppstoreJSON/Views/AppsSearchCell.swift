@@ -7,22 +7,39 @@
 //
 
 import UIKit
+import SDWebImage
 
 class AppsSearchCell: UICollectionViewCell {
     
     var result: ResultData? {
         didSet {
-            nameLabel.text = result?.trackName
-            categoryLabel.text = result?.primaryGenreName
-            ratingsLabel.text = "\(result?.averageUserRating ?? 0)"
+            
+            guard let result = result else { return }
+            
+            nameLabel.text = result.trackName
+            categoryLabel.text = result.primaryGenreName
+            ratingsLabel.text = "\(result.averageUserRating ?? 0)"
+            
+            let url = URL(string: result.artworkUrl100)
+            appIconImageView.sd_setImage(with: url)
+            
+            screenshot1ImageView.sd_setImage(with: URL(string: result.screenshotUrls[0]))
+            
+            if result.screenshotUrls.count > 1 {
+                screenshot2ImageView.sd_setImage(with: URL(string: result.screenshotUrls[1]))
+            }
+            
+            if result.screenshotUrls.count > 2 {
+                screenshot3ImageView.sd_setImage(with: URL(string: result.screenshotUrls[2]))
+            }
         }
     }
     
     let appIconImageView: UIImageView = {
         let iv = UIImageView()
-        iv.backgroundColor = .red
         iv.anchor(size: CGSize(width: 64, height: 64))
         iv.layer.cornerRadius = 12
+        iv.clipsToBounds = true
         return iv
     }()
     
@@ -61,7 +78,11 @@ class AppsSearchCell: UICollectionViewCell {
     
     func createScreenshotImageView() -> UIImageView {
         let imageView = UIImageView()
-        imageView.backgroundColor = .blue
+        imageView.layer.cornerRadius = 8
+        imageView.clipsToBounds = true
+        imageView.layer.borderWidth = 0.5
+        imageView.layer.borderColor = UIColor(white: 0.5, alpha: 0.5).cgColor
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }
     
